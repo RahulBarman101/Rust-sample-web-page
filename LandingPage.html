@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Rust</title>
+    <link rel="icon" href="images/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Container to containerize the whole page to some margin -->
+    <div class="container" id="home">
+        <!-- The header section with the nav items -->
+        <header>
+            <div class="header-logo">
+                <img src="./images/logo.svg" alt="" class="logo">
+            </div>
+
+            <!-- The nav bar -->
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#albums">Albums</a></li>
+                    <li><a href="#buy">Get Premium</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#footer">About</a></li>
+                </ul>
+            </nav>
+            <!-- End of navbar -->
+        </header>
+        <!-- End of the header -->
+    </div>
+    <!-- End of first container -->
+
+    <!-- Hero container -->
+    <div class="container">
+        <!-- The hero section with the image and the texts -->
+        <div class="hero">
+            <!-- The hero image -->
+            <div class="hero-img">
+                <img src="./images/hero-img.png" alt="" class="img">
+            </div>
+            <!-- End of hero image -->
+
+            <!-- The text section -->
+            <div class="text">
+                <div class="heading">
+                    <h1>Feel the
+                        <div class="music">Music</div>
+                    </h1>
+                </div>
+                <div class="subhead">With the best streaming quality and uninterupted ads free service. All songs in one place. Feel the beats feel the energy.</div>
+                <div class="cta"><a href="#" class="btn">Explore</a></div>
+            </div>
+            <!-- End of text section -->
+        </div>
+        <!-- End of the hero section -->
+    </div>
+    <!-- End of hero container -->
+
+    <!-- Albums Section -->
+    <div class="albums" id="albums">
+        <!-- Albums container -->
+        <div class="container">
+            <h1 class="album-heading">Albums</h1>
+            <h2 class="subtitle">Explore the wide range of music all in one place with music from famous artists like Eminem, Ariana Grande, Linkin Park and many more</h2>
+            <!-- End of card container -->
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./images/Divide_cover.png" alt="">
+                    <div class="details">
+                        <h2 class="artist">Ed Sheeran</h2>
+                        <p class="desc">Listen to his latest album Divide and groove to the beats all night long</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/Juice_Wrld_-_Legends_Never_Die.png" alt="">
+                    <div class="details">
+                        <h2 class="artist">Juice World</h2>
+                        <p class="desc">Listen to his latest album "Divide" and groove to the beats all night long</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/Thank_U,_Next_album_cover.png" alt="">
+                    <div class="details">
+                        <h2 class="artist">Ariana Grande</h2>
+                        <p class="desc">Listen to his latest album "Thank U, Next" and groove to the beats all night long</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/Khalid_-_Free_Spirit.png" alt="">
+                    <div class="details">
+                        <h2 class="artist">Khalid</h2>
+                        <p class="desc">Listen to his latest album "Free Spirit" and groove to the beats all night long</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/The_Marshall_Mathers_LP.jpg" alt="">
+                    <div class="details">
+                        <h2 class="artist">Eminem</h2>
+                        <p class="desc">Listen to his latest album "Marshal Mathers LP" and groove to the beats all night long</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./images/The_Weeknd_-_After_Hours.png" alt="">
+                    <div class="details">
+                        <h2 class="artist">The Weekend</h2>
+                        <p class="desc">Listen to his latest album "After Hours" and groove to the beats all night long</p>
+                    </div>
+                </div>
+            </div>
+            <!-- End of card container -->
+            <div class="album-cta">
+                <h2>Show All</h2>
+            </div>
+        </div>
+        <!-- End of albums container -->
+    </div>
+    <!-- End of albums section -->
+
+    <!-- Artist Section -->
+    <div class="buy" id="buy">
+        <img src="./images/pexels-cottonbro-4880423.jpg" alt="" class="bg-img">
+        <div class="container">
+            <div class="buy-heading">
+                <h2>Rust
+                    <h1>Premium</h1>
+                </h2>
+            </div>
+            <div class="buy-main">
+                <h1 class="main-heading">Get Rust Premium for One Year only for <s> $120</s> $99 this christmas</h1>
+                <h2 class="main-subhead">Avail the 18% discount now before it expiers on 1st Jan 2021</h2>
+                <div class="buy-cta">
+                    <a href="#" class="get-premium">Get Premium</a>
+                    <a href="#" class="view-plans">View Plans</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Artist Section -->
+
+    <!-- The Footer Section -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="basic-info">
+                <img src="./images/logo.svg" alt="" class="logo">
+                <p class="loc">Assam India</p>
+                <p class="street">21st Street local basti</p>
+            </div>
+            <div class="terms"><a href="#">Terms of Service</a></div>
+            <div class="privacy"><a href="#">Privacy Policy</a></div>
+            <div class="products"><a href="#">Products</a></div>
+        </div>
+    </footer>
+    <!-- End of footer section -->
+
+    <!-- Smooth scrolling -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        const scroll = new SmoothScroll('.navbar a[href*="#"]');
+    </script>
+</body>
+
+</html>
