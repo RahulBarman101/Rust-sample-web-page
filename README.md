@@ -8,3 +8,5 @@ with smooth scrolling and good visuals
 ![](images/screenshots/2.PNG)
 
 ![](images/screenshots/3.PNG)
+
+![](images/screenshots/4.PNG)
